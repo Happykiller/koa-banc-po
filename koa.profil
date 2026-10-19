@@ -1,0 +1,18 @@
+// Seed KoA — Product Owner (@po) du cluster « banc », le banc de recette du framework agentique.
+{
+  "version": 1,
+  "nom": "koa-banc-po",
+  "base": "debian",
+  "socle": "minimal",
+  "sudo": false,
+  "utilisateur": "agent",
+  "paquets": ["python3", "python3-pytest", "make"],
+  "bootstrap": "bootstrap.sh",
+  "repertoire": "~/koa-banc-po",
+  "cluster": "banc",
+  "qg": "https://github.com/Happykiller/koa-banc-qg.git",
+  "livres": ["equipe/po", "equipe/contrats", "equipe/table", "koa/architecture"],
+  "plugins": ["garde-fous@koa-skills", "koa@koa-skills"],
+  "agent": { "nature": "claude", "mode": "auto", "modele": "sonnet" },
+  "cloisonnement": { "interop": false, "montage_windows": false }
+}
